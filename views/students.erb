@@ -1,0 +1,6 @@
+<% @students.each do |student| %>
+    <a href = "/students/<%= student.id %>"><%= student.firstname %> <%= student.lastname %></a>
+    <br>
+<% end %>
+<br>
+<a class = "btn btn-primary" href = "/students/new">New</a>

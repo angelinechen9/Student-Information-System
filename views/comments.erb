@@ -1,0 +1,6 @@
+<% @comments.each do |comment| %>
+    <a href = "/comments/<%= comment.id %>"><%= comment.name %> <%= comment.timestamp %></a>
+    <br>
+<% end %>
+<br>
+<a class = "btn btn-primary" href = "/comments/new">New</a>

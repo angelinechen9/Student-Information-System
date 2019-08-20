@@ -1,0 +1,11 @@
+<p>Name: <%= @comment.name %></p>
+<p>Content: <%= @comment.content %></p>
+<p>First Name: <%= @comment.firstname %></p>
+<p>Last Name: <%= @comment.lastname %></p>
+<form action = "/comments/<%= @comment.id %>/edit">
+    <input class = "btn btn-primary" type = "submit" value = "Edit">
+</form>
+<form action = "/comments/<%= @comment.id %>" method = "post">
+    <input type = "hidden" name = "_method" value = "DELETE">
+    <input class = "btn btn-primary" type = "submit" value = "Delete">
+</form>

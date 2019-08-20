@@ -1,0 +1,11 @@
+<p>First Name: <%= @student.firstname %></p>
+<p>Last Name: <%= @student.lastname %></p>
+<p>Birthday: <%= @student.birthday %></p>
+<p>Address: <%= @student.address %></p>
+<form action = "/students/<%= @student.id %>/edit">
+    <input class = "btn btn-primary" type = "submit" value = "Edit">
+</form>
+<form action = "/students/<%= @student.id %>" method = "post">
+    <input type = "hidden" name = "_method" value = "DELETE">
+    <input class = "btn btn-primary" type = "submit" value = "Delete">
+</form>
